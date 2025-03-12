@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practica 1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="burguer" onclick="toggleMenu()">
+      <span class="burguer-Icon"></span>
+    </button>
+    <div class="menu">
+      <nav>
+        <a style="animation-delay: 0.2;">Acerca de</a>
+        <a style="animation-delay: 0.3;">Portafolio</a>
+        <a style="animation-delay: 0.4;">Contacto</a>
+        <a style="animation-delay: 0.5;">Cerrar Sesión</a>
+      </nav>
+    </div>
+
+    <script type="text/javascript">
+      const toggleMenu = () => {
+       document.body.classList.toggle('open'); 
+      }
+    </script>
+</body>
+</html>
