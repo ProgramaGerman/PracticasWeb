@@ -7,22 +7,18 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button class="burguer" onclick="toggleMenu()">
-      <span class="burguer-Icon"></span>
-    </button>
-    <div class="menu">
-      <nav>
-        <a style="animation-delay: 0.2;">Acerca de</a>
-        <a style="animation-delay: 0.3;">Portafolio</a>
-        <a style="animation-delay: 0.4;">Contacto</a>
-        <a style="animation-delay: 0.5;">Cerrar Sesión</a>
-      </nav>
+    <div onclick="toggleMenu()">
+        <div >
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+            <div class="line line3"></div>
+        </div>
     </div>
 
-    <script type="text/javascript">
-      const toggleMenu = () => {
-       document.body.classList.toggle('open'); 
-      }
+    <script>
+        function toggleMenu() {
+            document.body.classList.toggle('open');
+        }
     </script>
 </body>
 </html>

@@ -11,6 +11,10 @@ body.open .menu{
   animation: menu-in 0.425s;
 }
 
+*{
+  color: #000;
+}
+
 
 
 body.open .menu nav{

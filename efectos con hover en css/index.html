@@ -1,20 +1,52 @@
+
+
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Efecto Hover</title>
+    <title>Inventario de productos</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>contenedor</h1>
+    <header class="header">
+        <h1>Inventario de productos</h1>
+        <button>Añadir producto</button>
+        <button>Eliminar producto</button>
+        <button>Editar producto</button>
+        <button>Inicio de Sesion</button>
+    </header>
+
     <div class="container">
-        <a href="#"><img class ="card" src ="assets/PortadaPelisDisneyAmorAmistad.jpg" alt="peliculas"></a>
-        <a href="#"><img class="card" src="assets/las_mejores_peliculas_romanticas_53187_600.jpg" alt=""></a>
-        <a href="#"><img class="card" src="assets/592219.jpg" alt=""></a>
-        <a href="#"><img class="card" src="assets/los-increibles-2-peliculas-infantiles-2018-3204062241.jpg" alt=""></a>
-        <a href="#"><img class="card" src="assets/7b4da897b0f14ff439c57ca7dfd13fc2.jpg" alt=""></a>
+        <form >
+            <label for="nombre">Nombre del producto:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre del producto">
+    
+            <label for="precio">Precio del producto:</label>
+            <input type="number" id="precio" name="precio" placeholder="Precio del producto">
+    
+            <label for="cantidad">Cantidad del producto:</label>
+            <input type="number" id="cantidad" name="cantidad" placeholder="Cantidad del producto">
+            <button id="enviar">Enviar</button>
+        </form>
     </div>
+
+    <div class="salida" id="salida">
+        <h2>Lista de productos</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Acciones</th>
+                </tr>
+
+            </thead>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
     
 </body>
 </html>
